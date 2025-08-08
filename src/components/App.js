@@ -12,16 +12,16 @@ const App = () => {
   }
 
  const submitObj = () => {
-    const data = {};
+    const data = [];
 
     count.forEach((_, ind) => {
       const name = document.getElementById(`name${ind}`)?.value || "";
       const age = document.getElementById(`age${ind}`)?.value || "";
 
-      data[ind] = { name, age };
+      console.log({name,age})
+
     });
 
-    console.log( data);
   };
   return (
     <div
