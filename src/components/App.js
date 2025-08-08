@@ -28,8 +28,8 @@ const App = () => {
     >
       {count.map((_, ind) => (
         <div key={ind}>
-          <input placeholder="Name" id={`name${ind}`} />
-          <input placeholder="Age" id={`age${ind}`} />
+          <input placeholder="Name" id={`name${ind}`} name="name"/>
+          <input placeholder="Age" id={`age${ind}`} name="age"/>
           <button onClick={() => deleteItem(ind)}>Remove</button>
         </div>
       ))}
